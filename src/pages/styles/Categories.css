@@ -1,0 +1,6 @@
+.body_categories{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 1fr;
+    margin-top:2rem;
+  }

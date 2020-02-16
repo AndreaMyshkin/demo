@@ -1,0 +1,44 @@
+
+
+.nav_styles{
+    border-top: 4px solid #40e0d0;
+    background-color: #111111;
+  }
+  
+  .nav-link{
+  
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    line-height: 1.49;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav-link:hover{
+  
+    color: #fff;
+   
+  }
+  
+  .is-active{
+  background-color: #40e0d0;
+  }
+  
+  
+  
+  
+  
+  
+  
+   
+  a.anchor, a.anchor:hover{
+    color:#40e0d0 !important;
+    cursor:pointer;
+    text-transform: capitalize;
+    font-size:14px;
+    line-height: 1.5;
+  
+  }
+  
+  
