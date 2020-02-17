@@ -1,6 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Button from "../components/Button";
-import Card from "../components/Card";
 import PageLoading from "../components/PageLoading";
 import RandomCat from "./RandomCat";
 import "./styles/CatContainer.css";
