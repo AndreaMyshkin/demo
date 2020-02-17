@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import PageLoading from "../components/PageLoading";
+import RandomCat from "./RandomCat";
 import "./styles/CatContainer.css";
 
 export default class RandomCatContainer extends Component {
@@ -10,7 +11,7 @@ export default class RandomCatContainer extends Component {
     error: null,
     data: [],
     styles: {
-      black: "black"
+      black: "black",
     }
   };
 
@@ -38,16 +39,11 @@ export default class RandomCatContainer extends Component {
       return <PageLoading />;
     }
     return (
-      <Fragment>
-        <Button handleClick={this.fetchRandomCat} name={"cat"}/>
-        <div className="card__container">
-          <Card
-            randomCat={this.state.data}
-            style={this.state.styles.black}
-            title={"I'am the cat one"}
-          />
-        </div>
-      </Fragment>
+      <RandomCat
+        handleClick={this.fetchRandomCat}
+        randomCat={this.state.data}
+        style={this.state.styles}
+      />
     );
   }
 }
