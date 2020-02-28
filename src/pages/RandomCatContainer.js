@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import PageLoading from "../components/PageLoading";
-import RandomCat from "./RandomCat";
+import RandomCat from "../components/RandomCat";
 import "./styles/CatContainer.css";
 
 export default class RandomCatContainer extends Component {
@@ -28,7 +28,7 @@ export default class RandomCatContainer extends Component {
         data: dataRandomCat
       });
     } catch (error) {
-      this.setState({ loading: false, error: null });
+      this.setState({ loading: false, error: error });
     }
   };
 
@@ -42,6 +42,7 @@ export default class RandomCatContainer extends Component {
         randomCat={this.state.data}
         style={this.state.styles}
       />
+      
     );
   }
 }

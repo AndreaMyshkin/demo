@@ -28,7 +28,7 @@ export default class CategoriesContainer extends Component {
         data: dataCategories
       });
     } catch (error) {
-      this.setState({ loading: false, error: null });
+      this.setState({ loading: false, error: error });
     }
   };
   getRandomFact = async () => {
@@ -41,9 +41,12 @@ export default class CategoriesContainer extends Component {
         loading: false
       });
     } catch (error) {
-      this.setState({ loading: false, error: null });
+      this.setState({ loading: false, error: error });
     }
   };
+  handleClick =() =>{
+    this.getRandomFact();
+  }
   getRandomByCategory = async e => {
     const id = e.target.id;
     const text = e.target.innerText;
@@ -58,7 +61,7 @@ export default class CategoriesContainer extends Component {
         text: text
       });
     } catch (error) {
-      this.setState({ loading: false, error: null });
+      this.setState({ loading: false, error: error });
     }
   };
 
@@ -71,7 +74,7 @@ export default class CategoriesContainer extends Component {
         category: dataRandomCat
       });
     } catch (error) {
-      this.setState({ loading: false, error: null });
+      this.setState({ loading: false, error: error });
     }
   };
   render() {
