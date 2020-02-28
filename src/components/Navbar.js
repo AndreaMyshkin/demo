@@ -1,11 +1,11 @@
-import React, { Fragment, Component } from "react";
+import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import './styles/Navbar.css';
 
-class Navbar extends Component {
-  render() {
-    return (
-      <Fragment>
+
+export default function Navbar() {
+  return (
+    <Fragment>
         <ul class="nav justify-content-end nav_styles">
           <li class="nav-item">
             <NavLink className="nav-link" exact activeClassName='is-active' to="/">
@@ -19,8 +19,8 @@ class Navbar extends Component {
           </li>
         </ul>
       </Fragment>
-    );
-  }
+  )
 }
 
-export default Navbar;
+
+

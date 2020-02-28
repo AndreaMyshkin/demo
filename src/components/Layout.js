@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import './styles/Layout.css';
 
-function Layout(props) {
+ export default function Layout(props) {
   return (
     <div className='body'>
       <div className='layout'>
@@ -14,4 +14,4 @@ function Layout(props) {
   );
 }
 
-export default Layout;
+

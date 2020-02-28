@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import './styles/Card.css';
 
-function Card(props) {
+ export default function Card(props) {
   return (
     <Fragment>
       <div
@@ -26,4 +26,3 @@ function Card(props) {
   );
 }
 
-export default Card;

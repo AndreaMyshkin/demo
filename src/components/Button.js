@@ -1,7 +1,7 @@
 import React from "react";
 import './styles/Button.css';
 
-function Button(props) {
+export default function Button(props) {
   return (
     <div class="wrapper">
       <a className="button__cat"  onClick={props.handleClick}>
@@ -11,4 +11,3 @@ function Button(props) {
   );
 }
 
-export default Button;
